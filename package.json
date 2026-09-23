@@ -1,76 +1,79 @@
 {
-    "name": "vue-inline-template",
-    "displayName": "Vue Inline Template",
-    "description": "Syntax highlighting for vue inline template inside of JavaScript and TypeScript tagged template strings",
-    "version": "1.0.2",
-    "publisher": "faisalhakim47",
-    "icon": "docs/vue-logo.png",
-    "galleryBanner": {
-        "color": "#fcfcfc",
-        "theme": "light"
-    },
-    "scripts": {
-        "build": "vsce package"
-    },
-    "repository": {
-        "url": "https://github.com/faisalhakim47/vscode-vue-inline-template"
-    },
-    "bugs": {
-        "url": "https://github.com/faisalhakim47/vscode-vue-inline-template/issues"
-    },
-    "engines": {
-        "vscode": "^1.15.0"
-    },
-    "categories": [
-        "Languages"
-    ],
-    "keywords": [
-        "vue",
-        "template",
-        "javascript",
-        "typescript",
-        "html"
-    ],
-    "contributes": {
-        "grammars": [
-            {
-                "injectTo": [
-                    "source.js",
-                    "source.js.jsx",
-                    "source.jsx",
-                    "source.ts",
-                    "source.tsx",
-                    "text.html.basic"
-                ],
-                "scopeName": "inline.vue-inline-template",
-                "path": "./syntaxes/vue-inline-template.json",
-                "embeddedLanguages": {
-                    "meta.embedded.block.html": "html"
-                }
-            },
-            {
-                "injectTo": [
-                    "source.js",
-                    "source.js.jsx",
-                    "source.jsx",
-                    "source.ts",
-                    "source.tsx",
-                    "text.html.basic"
-                ],
-                "scopeName": "inline.vue-inline-template.quoted.string.injection",
-                "path": "./syntaxes/vue-inline-template-quoted-string-injection.json",
-                "embeddedLanguages": {
-                    "meta.template.expression.ts": "typescript"
-                }
-            }
+  "name": "vue-inline-template",
+  "displayName": "Vue Inline Template",
+  "description": "Syntax highlighting for vue inline template inside of JavaScript and TypeScript tagged template strings",
+  "version": "1.0.2",
+  "publisher": "faisalhakim47",
+  "icon": "docs/vue-logo.png",
+  "galleryBanner": {
+    "color": "#fcfcfc",
+    "theme": "light"
+  },
+  "scripts": {
+    "build": "vsce package"
+  },
+  "repository": {
+    "url": "https://github.com/faisalhakim47/vscode-vue-inline-template"
+  },
+  "bugs": {
+    "url": "https://github.com/faisalhakim47/vscode-vue-inline-template/issues"
+  },
+  "engines": {
+    "vscode": "^1.15.0"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "keywords": [
+    "vue",
+    "template",
+    "javascript",
+    "typescript",
+    "html"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "text.html.basic"
         ],
-        "typescriptServerPlugins": [
-            {
-                "name": "typescript-lit-html-plugin"
-            }
-        ]
-    },
-    "dependencies": {
-        "typescript-lit-html-plugin": "0.2.0"
-    }
+        "scopeName": "inline.vue-inline-template",
+        "path": "./syntaxes/vue-inline-template.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.html": "html"
+        }
+      },
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "text.html.basic"
+        ],
+        "scopeName": "inline.vue-inline-template.quoted.string.injection",
+        "path": "./syntaxes/vue-inline-template-quoted-string-injection.json",
+        "embeddedLanguages": {
+          "meta.template.expression.ts": "typescript"
+        }
+      }
+    ],
+    "typescriptServerPlugins": [
+      {
+        "name": "typescript-lit-html-plugin"
+      }
+    ]
+  },
+  "dependencies": {
+    "typescript-lit-html-plugin": "0.2.0"
+  },
+  "devDependencies": {
+    "vsce": "^2.15.0"
+  }
 }

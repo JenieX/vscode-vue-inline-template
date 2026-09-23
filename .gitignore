@@ -2,6 +2,4 @@ out
 node_modules
 *.log
 .DS_Store
-*.vsix
 vue-inline-template-*.vsix
-package-lock.json
